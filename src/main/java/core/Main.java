@@ -12,7 +12,7 @@ import javax.security.auth.login.LoginException;
 
 public class Main
 {
-    private static JDABuilder builder;
+    public static JDABuilder builder;
     public static void main(String[] args)
     {
         builder = new JDABuilder(AccountType.BOT);
@@ -40,7 +40,7 @@ public class Main
     }
 
     // LISTENERS
-    private static void addListeners()
+    public static void addListeners()
     {
         builder.setStatus(OnlineStatus.ONLINE);
         builder.addEventListener(new ReadyListener());

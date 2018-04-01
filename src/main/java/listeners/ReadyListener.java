@@ -18,6 +18,5 @@ public class ReadyListener extends ListenerAdapter
             ).queue();
         }
 
-        System.out.println(out);
     }
 }
