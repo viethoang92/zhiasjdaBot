@@ -6,7 +6,7 @@ import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
-import util.SECRETS;
+//import util.SECRETS;
 
 import javax.security.auth.login.LoginException;
 
