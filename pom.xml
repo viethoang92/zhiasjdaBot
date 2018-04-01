@@ -34,7 +34,7 @@
     </repositories>
 
     <dependencies>
-<!--
+
         <dependency>
             <groupId>fr.bmartel</groupId>
             <artifactId>jspeedtest</artifactId>
@@ -56,7 +56,7 @@
             <artifactId>unirest-java</artifactId>
             <version>LATEST</version>
         </dependency>
--->
+
         <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
@@ -74,7 +74,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.5</version>
         </dependency>
-<!--
+
         <dependency>
             <groupId>org.brunocvcunha.jiphy</groupId>
             <artifactId>jiphy</artifactId>
@@ -85,6 +85,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.8-dmr</version>
         </dependency>
--->
+
     </dependencies>
 </project>
