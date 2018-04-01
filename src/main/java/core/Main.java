@@ -1,5 +1,7 @@
 package core;
 
+import listeners.ReadyListener;
+import listeners.VoiceListener;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
@@ -10,14 +12,18 @@ import javax.security.auth.login.LoginException;
 
 public class Main
 {
+    private static JDABuilder builder;
     public static void main(String[] args)
     {
-        JDABuilder builder = new JDABuilder(AccountType.BOT);
+        builder = new JDABuilder(AccountType.BOT);
 
-        builder.setToken(System.getenv(TOKEN));
+
+        builder.setToken(System.getenv("TOKEN"));
+        //builder.setToken(SECRETS.TOKEN);
         builder.setAutoReconnect(true);
 
-        builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
+        addListeners();
+
 
         try
         {
@@ -29,5 +35,15 @@ public class Main
         {
             e.printStackTrace();
         }
+
+
+    }
+
+    // LISTENERS
+    private static void addListeners()
+    {
+        builder.setStatus(OnlineStatus.ONLINE);
+        builder.addEventListener(new ReadyListener());
+        builder.addEventListener(new VoiceListener());
     }
 }
