@@ -14,7 +14,7 @@ public class Main
     {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
 
-        builder.setToken(SECRETS.TOKEN);
+        builder.setToken(System.getenv(TOKEN));
         builder.setAutoReconnect(true);
 
         builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
