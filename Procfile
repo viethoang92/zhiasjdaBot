@@ -1,1 +1,1 @@
-worker: javac src/main/java/core/Main.java
+worker: java -jar src/builds/zhiasjdaBot.jar
