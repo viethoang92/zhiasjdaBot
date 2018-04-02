@@ -22,7 +22,7 @@ public class Main
 
         builder.setToken(System.getenv("TOKEN"));
         //builder.setToken(SECRETS.TOKEN);
-        builder.setAutoReconnect(true);
+        //builder.setAutoReconnect(true);
         builder.setStatus(OnlineStatus.ONLINE);
 
         addListeners();
