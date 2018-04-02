@@ -17,6 +17,7 @@ public class ReadyListener extends ListenerAdapter
                     "Login Successful!"
             ).queue();
         }
+        System.out.println(out);
 
     }
 }

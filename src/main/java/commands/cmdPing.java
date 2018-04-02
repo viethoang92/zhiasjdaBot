@@ -20,7 +20,7 @@ public class cmdPing implements Command
     @Override
     public void executed(boolean success, MessageReceivedEvent event)
     {
-        System.out.println(String.format("[INFO] Commpand '%sping' was executed.", STATIC.PREFIX));
+        System.out.println(String.format("[INFO] Command '%sping' was executed.", STATIC.PREFIX));
     }
 
     @Override
