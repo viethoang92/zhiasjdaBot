@@ -1,1 +1,1 @@
-web: javac src/main/java/core/Main.java
+worker: javac src/main/java/core/Main.java
