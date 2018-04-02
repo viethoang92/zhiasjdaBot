@@ -22,8 +22,8 @@ public class Main
 
         builder.setToken(System.getenv("TOKEN"));
         //builder.setToken(SECRETS.TOKEN);
-        //builder.setAutoReconnect(true);
-        builder.setStatus(OnlineStatus.ONLINE);
+        builder.setAutoReconnect(true);
+        
 
         addListeners();
         addCommands();
@@ -49,7 +49,7 @@ public class Main
     // LISTENERS
     public static void addListeners()
     {
-
+        builder.setStatus(OnlineStatus.IDLE);
         builder.addEventListener(new ReadyListener());
         builder.addEventListener(new VoiceListener());
         builder.addEventListener(new CommandListener());
